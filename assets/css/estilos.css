@@ -1,0 +1,230 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.menu h2{
+    font-size: 18px;
+}
+ul{
+    display: flex;
+}
+ul a{
+    background: none;
+    color: blue;
+    border:none;
+
+}
+ul a:hover{
+    filter:blur(3px);
+    background: none;
+    border: none;
+}
+.titulo{
+    text-align: center;
+    margin-top: 200px;
+}
+h1{
+    margin-top: 40px;
+    font-size: 100px;
+    text-shadow: 8px 8px 5px rgb(69, 133, 230);
+    margin-bottom: 20px;
+
+}
+h2{
+    font-size: 70px;
+    margin: 0;
+
+}
+a{
+    font-size: 20px;
+    background-color: rgb(69, 133, 230);
+    padding: 20px 30px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    transition: 1s
+}
+a:hover{ 
+    color: rgb(69, 133, 230);
+    background-color: white ;
+    border:2px solid rgb(69, 133, 230);
+    transition: 1s;
+}
+header{
+background: url(../img/fondo.jpg);
+height: 100vh;
+background-size: cover;
+}
+.contenedor{
+   max-width: 3000px;
+   width: 90%;
+   margin: auto;  
+}
+h3{
+    text-align: center;
+    font-size: 50px;
+    margin: 70px 0;
+    
+}
+#contenedor-sobre-mi{
+    display: flex;
+    justify-content: space-around;
+}
+#contenedor-parrafo{
+width: 45%;
+border-bottom-left-radius: 40px;
+border-top-right-radius: 40px;
+box-shadow: 3px 3px 5px black;
+padding: 50px;
+background-color: #d5f1f7;
+}
+p{
+    margin-bottom: 20px;
+   
+}
+header h3{
+    font-size: 30px;
+    font-family: 'Knewave', cursive;
+    color: rgb(19, 115, 226);
+
+}
+.titulo{
+    text-align: center;
+}
+
+
+/*secciones pasatiempos*/
+#contenedor-mis-pasatiempos{
+    display:flex;
+    justify-content: space-between;
+
+
+}
+.cajas-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.cajas{
+width: 25%;
+box-shadow: 5px 5px 5px black, 0 0 1px black;
+padding: 40px;
+background:linear-gradient(rgb(255, 255, 255),rgb(192, 231, 247));
+
+}
+.cajas img{
+    width: 100%;
+   
+   
+}
+
+span{
+    font-size:80px; 
+    color: blue;
+} 
+.owl-nav{
+    text-align:center;
+}
+#whatssapp{
+    position: fixed;
+    background: none;
+    top: 85%;
+    right:0.1%;
+}
+#whatssapp a{
+    background: none;
+}
+footer{
+    background: #d5f1f7;
+    text-align: center;
+    padding: 50px;
+}
+h4{
+    font-size: 30px;
+}
+footer a{
+   background: none;
+   transition: 1s;
+   border: none;
+} 
+footer a:hover{
+    background: none;
+    border: none;
+ } 
+   
+footer img{
+    transform:rotate(0); 
+    transition:0.4s;
+    background: none;
+    border: none
+}
+footer img:hover{
+    transform:rotate(360deg); 
+    background: none;
+    border: none;
+}
+
+
+
+
+
+
+
+
+.menu-icon{
+    display: none;
+}
+
+/*AQUI VA LO QUE PASARÁ CUANDO SE VEA EN UN CELULAR LA PÁGINA*/
+
+@media(max-width:1024px){
+    nav{
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: #d5f1f7;
+        width: 100%;
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        display: flex;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .titulo{
+        margin-top: 50px;
+    }
+    h1{
+        font-size: 70px;
+    }
+    .titulo h2{
+        font-size: 40px;
+    }
+    #contenedor-sobre-mi{
+        flex-direction: column;
+    }
+    #contenedor-parrafo{
+        width: 80%;
+        margin-top: 20px;
+    }
+    .cajas-contenedor{
+        flex-direction: column;
+    }
+    .cajas{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
